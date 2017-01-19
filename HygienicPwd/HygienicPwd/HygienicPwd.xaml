@@ -1,0 +1,11 @@
+<Window 
+       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+       Title="HygienicPwd" Height="300" Width="300"> 
+       <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="285*"/>
+            <ColumnDefinition Width="8*"/>
+        </Grid.ColumnDefinitions>
+    </Grid>
+</Window> 
