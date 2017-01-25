@@ -1,11 +1,16 @@
 <Window 
        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
-       Title="HygienicPwd" Height="300" Width="300"> 
-       <Grid>
+       Title="HygienicPwd" Height="200" Width="300">
+    <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="285*"/>
-            <ColumnDefinition Width="8*"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="0*"/>
         </Grid.ColumnDefinitions>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="26" Margin="10,32,0,0" VerticalAlignment="Top" Width="272" Grid.ColumnSpan="2"/>
+        <Label x:Name="label" Content="pwd name:" HorizontalAlignment="Left" Height="26" Margin="8,32,0,0" VerticalAlignment="Top" Width="76"/>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="19" Margin="3,35,0,0" TextWrapping="Wrap" Text="epay" VerticalAlignment="Top" Width="188" Grid.Column="1"/>
+        <Button x:Name="button" Content="Generate" HorizontalAlignment="Left" Height="24" Margin="108,75,0,0" VerticalAlignment="Top" Width="72" Click="generate_Click" RenderTransformOrigin="0.532,0.042" Grid.ColumnSpan="2"/>
     </Grid>
 </Window> 
