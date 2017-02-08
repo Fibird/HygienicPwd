@@ -8,8 +8,17 @@
             <ColumnDefinition/>
             <ColumnDefinition Width="0*"/>
         </Grid.ColumnDefinitions>
-        <Label x:Name="label" Content="pwd name:" HorizontalAlignment="Left" Height="26" Margin="8,32,0,0" VerticalAlignment="Top" Width="76"/>
-        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="19" Margin="3,35,0,0" TextWrapping="Wrap" Text="epay" VerticalAlignment="Top" Width="188" Grid.Column="1"/>
-        <Button x:Name="button" Content="Generate" HorizontalAlignment="Left" Height="24" Margin="108,75,0,0" VerticalAlignment="Top" Width="72" Click="generate_Click" RenderTransformOrigin="0.532,0.042" Grid.ColumnSpan="2"/>
+        <TabControl x:Name="tabControl" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="148" Margin="10,0,0,0" VerticalAlignment="Top" Width="272">
+            <TabItem Header="home">
+                <Grid Background="#FFE5E5E5" Margin="0,0,-3,-1">
+                    <Label x:Name="label" Content="pwd name:" HorizontalAlignment="Left" Height="24" Margin="10,10,0,0" VerticalAlignment="Top" Width="75"/>
+                    <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="16" Margin="85,14,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="165"/>
+                    <Button x:Name="button" Content="Generate" HorizontalAlignment="Left" Margin="181,60,0,0" VerticalAlignment="Top" Width="75" Click="generate_Click" RenderTransformOrigin="0.532,0.042" Grid.ColumnSpan="2"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="TabItem" HorizontalAlignment="Left" Width="59">
+                <Grid Background="#FFE5E5E5"/>
+            </TabItem>
+        </TabControl>
     </Grid>
 </Window> 
